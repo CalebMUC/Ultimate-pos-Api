@@ -7,6 +7,11 @@ namespace Ultimate_POS_Api.Repository
     {
         public Task<ResponseStatus> AddProducts(ProductListDto JsonData);
 
+
+        public Task<ResponseStatus> Register(Register register);
+
+        public Task<LoginResponseStatus> Login(UserInfo userInfo);
+
         public Task<IEnumerable<Products>> GetProducts();
     }
 }
