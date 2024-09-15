@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Ultimate POS Api.props" />
+</Project>
