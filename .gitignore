@@ -6,3 +6,4 @@ node_modules/
 
 # Ignore all log files
 *.log
+Ultimate_pos-frontend/ 

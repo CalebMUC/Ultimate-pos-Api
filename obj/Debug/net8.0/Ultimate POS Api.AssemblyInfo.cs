@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ultimate POS Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24ac7ee67b08ec2a4ac0257df8c5cb1a1fa4f4d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb7bcc9b6b30054dcf041db858bed53cce43c701")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ultimate POS Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ultimate POS Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
