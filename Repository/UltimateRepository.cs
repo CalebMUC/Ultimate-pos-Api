@@ -216,7 +216,7 @@ namespace Ultimate_POS_Api.Repository
                 issuer: issuer,
                 audience: audience,
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(expirationInMinutes),
+                expires: DateTime.Now.AddMinutes(30),
                 signingCredentials: credentials);
 
             // Serialize the token to string
@@ -286,6 +286,10 @@ namespace Ultimate_POS_Api.Repository
                 Quantity = dto.Quantity,
                 CreatedOn = DateTime.UtcNow,
                 UpdatedOn = DateTime.UtcNow,
+                CreatedBy = dto.CreatedBy,
+                UpdatedBy = dto.UpdatedBy,
+
+
                 // Set CreatedBy, UpdatedBy based on the current user context
             }).ToList();
 

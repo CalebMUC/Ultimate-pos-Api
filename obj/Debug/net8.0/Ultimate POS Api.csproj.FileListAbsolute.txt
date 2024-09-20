@@ -1,10 +1,3 @@
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.csproj.AssemblyReference.cache
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.GeneratedMSBuildEditorConfig.editorconfig
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.AssemblyInfoInputs.cache
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.AssemblyInfo.cs
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.csproj.CoreCompileInputs.cache
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.MvcApplicationPartsAssemblyInfo.cs
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.MvcApplicationPartsAssemblyInfo.cache
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\appsettings.Development.json
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\appsettings.json
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Ultimate POS Api.exe
@@ -12,27 +5,6 @@ F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Ultimate POS Api.deps.json
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Ultimate POS Api.runtimeconfig.json
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Ultimate POS Api.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Ultimate POS Api.pdb
-F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
-F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Newtonsoft.Json.dll
-F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets.build.json
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets.development.json
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets\msbuild.Ultimate POS Api.Microsoft.AspNetCore.StaticWebAssets.props
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets\msbuild.build.Ultimate POS Api.props
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Ultimate POS Api.props
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Ultimate POS Api.props
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets.pack.json
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\scopedcss\bundle\Ultimate POS Api.styles.css
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate.240D0D43.Up2Date
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.dll
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\refint\Ultimate POS Api.dll
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.pdb
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.genruntimeconfig.cache
-F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\ref\Ultimate POS Api.dll
-F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Azure.Core.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Azure.Identity.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Humanizer.dll
@@ -43,6 +15,8 @@ F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -55,11 +29,16 @@ F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Mono.TextTemplating.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Newtonsoft.Json.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Serilog.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Serilog.Sinks.File.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\System.CodeDom.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -138,4 +117,39 @@ F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawin
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.csproj.AssemblyReference.cache
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.GeneratedMSBuildEditorConfig.editorconfig
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.AssemblyInfoInputs.cache
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.AssemblyInfo.cs
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.csproj.CoreCompileInputs.cache
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.MvcApplicationPartsAssemblyInfo.cs
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.MvcApplicationPartsAssemblyInfo.cache
 F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.sourcelink.json
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets.build.json
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets.development.json
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets\msbuild.Ultimate POS Api.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets\msbuild.build.Ultimate POS Api.props
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Ultimate POS Api.props
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Ultimate POS Api.props
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\staticwebassets.pack.json
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\scopedcss\bundle\Ultimate POS Api.styles.css
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate.240D0D43.Up2Date
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.dll
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\refint\Ultimate POS Api.dll
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.pdb
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\Ultimate POS Api.genruntimeconfig.cache
+F:\Caleb\Ultimate POS Api\obj\Debug\net8.0\ref\Ultimate POS Api.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\CacheManager.Core.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\CacheManager.Microsoft.Extensions.Configuration.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\CacheManager.Microsoft.Extensions.Logging.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\FluentValidation.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\IPAddressRange.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Microsoft.Extensions.DiagnosticAdapter.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Ocelot.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\Ocelot.Cache.CacheManager.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\System.Diagnostics.PerformanceCounter.dll
+F:\Caleb\Ultimate POS Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll

@@ -71,6 +71,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Ocelot.Cache.CacheManager": {
+              "target": "Package",
+              "version": "[23.3.3, )"
+            },
             "Serilog": {
               "target": "Package",
               "version": "[4.0.1, )"

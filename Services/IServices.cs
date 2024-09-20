@@ -6,6 +6,7 @@ namespace Ultimate_POS_Api.Services
     public interface IServices
     {
         public Task<ResponseStatus> AddProducts(ProductListDto productList);
+      
         public Task<IEnumerable<Products>> GetProducts();
 
         public Task<ResponseStatus> Register(Register register);

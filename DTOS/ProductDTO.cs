@@ -5,6 +5,8 @@ namespace Ultimate_POS_Api.DTOS
 {
     public class ProductDTOs
     {
+        public string ProductID { get; set; } = string.Empty;
+
         [Required]
         public string ProductName { get; set; } = string.Empty;
 
@@ -12,6 +14,10 @@ namespace Ultimate_POS_Api.DTOS
         public string ProductDescription { get; set; } = string.Empty;
 
         public string ProductType { get; set; }
+        public string CreatedBy { get; set; }
+
+        public string UpdatedBy { get; set; }
+
 
         [Required]
         public string ProductCategory { get; set; } = string.Empty;
