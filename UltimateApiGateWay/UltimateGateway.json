@@ -1,0 +1,52 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5031" // This is your gateway's base URL for HTTP
+  },
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Ultimate/AddProducts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44336 // HTTPS port for your downstream service
+        }
+      ],
+      "UpstreamPathTemplate": "/api/gateway/add-products",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Ultimate/GetProducts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44336 // Same downstream service for fetching products
+        }
+      ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "10s",
+        "Limit": 3,
+        "PeriodTimespan": 10
+      },
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      },
+      "UpstreamPathTemplate": "/api/gateway/get-products",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44336 // Assuming your Swagger runs on the same downstream API
+        }
+      ],
+      "UpstreamPathTemplate": "/swagger/{everything}",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ]
+}

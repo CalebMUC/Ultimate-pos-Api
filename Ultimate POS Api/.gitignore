@@ -1,0 +1,9 @@
+# Ignore the .vs directory (Visual Studio)
+.vs/
+
+# Ignore node_modules for Node.js projects
+node_modules/
+
+# Ignore all log files
+*.log
+Ultimate_pos-frontend/ 

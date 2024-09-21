@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\UltimateApiGateWay.props" />
+</Project>

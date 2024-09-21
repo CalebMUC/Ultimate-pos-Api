@@ -1,0 +1,39 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5134"
+  },
+
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Ultimate/AddProducts",
+      "DownstreamScheme": "https",
+      "DownStreamHostandPorts": [
+        {
+          "Host": "localhost",
+          "port": 44336  //Swagger Port
+        }
+      ],
+      "UpstreamPathTemplate": "/api/gateway/add-products",
+      "UpstreamHttpMethod": [ "POST" ]
+
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Ultimate/GetProducts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44336 // IIS or API port
+        }
+      ],
+      "UpstreamPathTemplate": "/api/gateway/get-products",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+
+
+
+  ]
+
+
+}
