@@ -145,6 +145,11 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddScoped<IServices, UltimateServices>();
 builder.Services.AddScoped<IRepository, UltimateRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ItransactionRepository, TransactionRepository>();
+builder.Services.AddScoped<ISuppliersRepository, SuppliersRepository>();
+builder.Services.AddScoped<ISuppliesRepository, SuppliesRepository>();
+
+
 
 // Configure Serilog
 Log.Logger = new LoggerConfiguration()

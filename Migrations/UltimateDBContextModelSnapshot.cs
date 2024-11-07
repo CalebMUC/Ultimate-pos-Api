@@ -96,11 +96,61 @@ namespace Ultimate_POS_Api.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("Ultimate_POS_Api.Models.Products", b =>
+            modelBuilder.Entity("Ultimate_POS_Api.Models.PaymentDetails", b =>
                 {
-                    b.Property<int>("ProductID")
+                    b.Property<int>("PaymentMethodID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    b.Property<double>("Amount")
+                        .HasColumnType("double");
+
+                    b.Property<DateTime>("PaymentDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("PaymentID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PaymentReference")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("PaymentMethodID");
+
+                    b.HasIndex("PaymentID");
+
+                    b.ToTable("PaymentDetails");
+                });
+
+            modelBuilder.Entity("Ultimate_POS_Api.Models.Payments", b =>
+                {
+                    b.Property<int>("PaymentID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("PaymentID");
+
+                    b.ToTable("Payments");
+                });
+
+            modelBuilder.Entity("Ultimate_POS_Api.Models.Products", b =>
+                {
+                    b.Property<string>("ProductID")
+                        .HasColumnType("varchar(255)");
 
                     b.Property<decimal>("BuyingPrice")
                         .HasColumnType("DECIMAL(10, 2)");
@@ -149,6 +199,102 @@ namespace Ultimate_POS_Api.Migrations
                     b.HasIndex("CategoryID");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("Ultimate_POS_Api.Models.TransactionProduct", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductID")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TransactionID")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductID");
+
+                    b.HasIndex("TransactionID");
+
+                    b.ToTable("TransactionProducts");
+                });
+
+            modelBuilder.Entity("Ultimate_POS_Api.Models.Transactions", b =>
+                {
+                    b.Property<int>("TransactionID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<double>("AmountRecieved")
+                        .HasColumnType("double");
+
+                    b.Property<double>("CashChange")
+                        .HasColumnType("double");
+
+                    b.Property<string>("CreatedBy")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("PaymentConfirmation")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("PaymentDetailsPaymentMethodID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PaymentMethodID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductsJson")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("StatusMessage")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<double>("TotalCost")
+                        .HasColumnType("double");
+
+                    b.Property<double>("TotalDiscount")
+                        .HasColumnType("double");
+
+                    b.Property<double>("TotalValueAddedTax")
+                        .HasColumnType("double");
+
+                    b.Property<DateTime>("TransactionDateDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("UpdatedBy")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("TransactionID");
+
+                    b.HasIndex("PaymentDetailsPaymentMethodID");
+
+                    b.HasIndex("UserID");
+
+                    b.ToTable("Transactions");
                 });
 
             modelBuilder.Entity("User", b =>
@@ -228,6 +374,17 @@ namespace Ultimate_POS_Api.Migrations
                     b.ToTable("UserRole");
                 });
 
+            modelBuilder.Entity("Ultimate_POS_Api.Models.PaymentDetails", b =>
+                {
+                    b.HasOne("Ultimate_POS_Api.Models.Payments", "Payments")
+                        .WithMany("PaymentDetails")
+                        .HasForeignKey("PaymentID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Payments");
+                });
+
             modelBuilder.Entity("Ultimate_POS_Api.Models.Products", b =>
                 {
                     b.HasOne("Ultimate_POS_Api.Models.Categories", "Categories")
@@ -237,6 +394,44 @@ namespace Ultimate_POS_Api.Migrations
                         .IsRequired();
 
                     b.Navigation("Categories");
+                });
+
+            modelBuilder.Entity("Ultimate_POS_Api.Models.TransactionProduct", b =>
+                {
+                    b.HasOne("Ultimate_POS_Api.Models.Products", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Ultimate_POS_Api.Models.Transactions", "Transaction")
+                        .WithMany("TransactionProducts")
+                        .HasForeignKey("TransactionID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Transaction");
+                });
+
+            modelBuilder.Entity("Ultimate_POS_Api.Models.Transactions", b =>
+                {
+                    b.HasOne("Ultimate_POS_Api.Models.PaymentDetails", "PaymentDetails")
+                        .WithMany("Transactions")
+                        .HasForeignKey("PaymentDetailsPaymentMethodID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PaymentDetails");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("UserRole", b =>
@@ -266,6 +461,21 @@ namespace Ultimate_POS_Api.Migrations
             modelBuilder.Entity("Ultimate_POS_Api.Models.Categories", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("Ultimate_POS_Api.Models.PaymentDetails", b =>
+                {
+                    b.Navigation("Transactions");
+                });
+
+            modelBuilder.Entity("Ultimate_POS_Api.Models.Payments", b =>
+                {
+                    b.Navigation("PaymentDetails");
+                });
+
+            modelBuilder.Entity("Ultimate_POS_Api.Models.Transactions", b =>
+                {
+                    b.Navigation("TransactionProducts");
                 });
 
             modelBuilder.Entity("User", b =>

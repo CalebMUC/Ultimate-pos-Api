@@ -61,7 +61,7 @@ namespace Ultimate_POS_Api.Repository
                 }
             }
 
-            // Add the new products to the database
+            // Add the new category to the database
             _dbContext.Categories.AddRange(category);
 
             try

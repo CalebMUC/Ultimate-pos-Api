@@ -15,13 +15,14 @@ namespace Ultimate_POS_Api.Controllers
             _service = services;
         }
 
-        [HttpPost("Login")]
+         [HttpPost("Login")]
         public async Task<ActionResult> Login(UserInfo userInfo) {
 
             try
             {
+                var response = await _service.Login(userInfo);
 
-                return Ok(userInfo);
+                return Ok(response);
             }
             catch (Exception ex)
             {

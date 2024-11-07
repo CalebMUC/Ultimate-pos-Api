@@ -13,17 +13,20 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.Extensions.Options;
 
 namespace Ultimate_POS_Api.Repository
 {
     public class UltimateRepository : IRepository
     {
         private readonly UltimateDBContext _dbContext;
+        private readonly JwtSettings _jwtSettings; 
         private readonly IConfiguration _configuration;
 
-        public UltimateRepository(UltimateDBContext dbContext)
+        public UltimateRepository(UltimateDBContext dbContext, IOptions<JwtSettings> jwtsettings)
         {
             _dbContext = dbContext;
+             _jwtSettings = jwtsettings.Value;
         }
         public async Task<IEnumerable<Products>> GetProducts()
         {
@@ -213,8 +216,8 @@ namespace Ultimate_POS_Api.Repository
 
             // Create the JWT token
             var token = new JwtSecurityToken(
-                issuer: issuer,
-                audience: audience,
+                // issuer: issuer,
+                // audience: audience,
                 claims: claims,
                 expires: DateTime.Now.AddMinutes(expirationInMinutes),
                 signingCredentials: credentials);

@@ -6,7 +6,7 @@ namespace Ultimate_POS_Api.Models
     public class Products
     {
         [Key]
-        public int ProductID { get; set; }
+        public string ProductID { get; set; }
 
         [Required]
         [Column(TypeName = "VARCHAR(255)")] // MySQL-compatible string type with a max length
